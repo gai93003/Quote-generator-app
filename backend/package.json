@@ -1,0 +1,10 @@
+{
+  "name": "quote-generator-app",
+  "version": "1.0.0",
+  "main": "script.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node script.mjs"
+  },
+  "dependencies": {}
+}
