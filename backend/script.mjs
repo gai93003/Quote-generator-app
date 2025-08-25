@@ -13,9 +13,7 @@ function pickRandonQuote() {
 app.get("/", (req, res) => {
   console.log("Revised a request for a quote");
   const quote = pickRandonQuote();
-  // res.send(`"${quote.quote}" -${quote.author}`);
-  res.send(`{"quote": ${quote.quote}, "author": ${quote.author}`)
-});
+res.json({ quote: quote.quote, author: quote.author });});
 
 app.post('/', (req, res) => {
   const bodyBytes = [];
