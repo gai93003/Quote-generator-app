@@ -3,7 +3,12 @@ import express from "express";
 const app = express();
 const port = 3000;
 
-const quotes = [];
+const quotes = [
+  {
+    quote: "Life is 10% what happens to you and 90% how you react to it",
+    author: "Lou Holtz"
+  }
+];
 
 function pickRandonQuote() {
   const index = Math.floor(Math.random() * quotes.length);
@@ -11,9 +16,15 @@ function pickRandonQuote() {
 }
 
 app.get("/", (req, res) => {
-  console.log("Revised a request for a quote");
+  console.log("Received a request for a quote");
   const quote = pickRandonQuote();
-res.json({ quote: quote.quote, author: quote.author });});
+  res.json(quote); // This sets the correct Content-Type and stringifies the object
+});
+
+// app.get("/", (req, res) => {
+//   console.log("Revised a request for a quote");
+//   const quote = pickRandonQuote();
+// res.json({ quote: quote.quote, author: quote.author });});
 
 app.post('/', (req, res) => {
   const bodyBytes = [];
