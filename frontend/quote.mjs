@@ -5,7 +5,6 @@ const getQuote = async () => {
   try {
     const response = await fetch(url);
     let data = await response.json();
-    console.log(data);
     
     displayQuotes(data)
   } catch (error) {
@@ -16,7 +15,9 @@ const getQuote = async () => {
 const displayQuotes = (data) => {
   document.getElementById('quote').textContent = data.quote;
   document.getElementById('author').textContent = data.author;
+  
 }
 
+document.getElementById('new-quote').addEventListener('click', getQuote);
 
 window.onload = getQuote();
