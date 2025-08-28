@@ -6,9 +6,17 @@ const getQuote = async () => {
     const response = await fetch(url);
     let data = await response.json();
     console.log(data);
+    
+    displayQuotes(data)
   } catch (error) {
     console.error('Error fetching quote:', error);
   }
 };
 
-getQuote();
+const displayQuotes = (data) => {
+  document.getElementById('quote').textContent = data.quote;
+  document.getElementById('author').textContent = data.author;
+}
+
+
+window.onload = getQuote();

@@ -10,6 +10,10 @@ const quotes = [
   {
     quote: "Life is 10% what happens to you and 90% how you react to it",
     author: "Lou Holtz"
+  },
+  {
+    quote: "If you're brave enough to say goodbye, life will reward you with a new hello.",
+    author: 'Paulo Coehlo'
   }
 ];
 
