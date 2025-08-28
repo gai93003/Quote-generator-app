@@ -6,5 +6,7 @@
   "scripts": {
     "start": "node script.mjs"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
