@@ -35,22 +35,45 @@ p#quote {
 }
 
 button {
-  padding: 0.5rem;
-  margin: 0.5rem 0 1rem;
+  background: rgb(118, 117, 117);
+  margin-left: 1rem;
+}
+
+#new-quote-form fieldset {
+  border: none;
+}
+
+input#quote-inpt, input#author-inpt, form button {
+  padding:0.5rem;
+  border: none;
+  border-radius: 0.2rem;
   outline: none;
   border: none;
-  font-size: 16px;
-  float: right;
-  width: 15%;
-  float: right;
-  justify-self: end;
-  left: 80%;
+}
+
+.container div {
   position: absolute;
-  top: 70%;
-  font-weight: 600;
-  border-radius: 3px;
-  background-color: #f3a83b;
-  color: #fff;
+  bottom: 1px;
+  left: 1px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  transform: translate(50%);
+}
+
+.container div button{
+  margin: 0 auto;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  padding: 0.2rem;
+  
+}
+
+#new-quote {
+  padding: 0.5rem;
+  width: 30%;
+  margin: rem auto 0;
 }
 
 p#author {
@@ -74,4 +97,24 @@ p#author {
   background-color: black;
   width: 20px;
   height: 20px;
+}
+
+#new-quote-form {
+  padding: 3rem;
+  margin: 2rem auto;
+  width: 80%;
+  display: flex;
+  gap: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(210, 212, 214);
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  border-bottom-left-radius: 1rem;
+}
+
+label {
+  color: rgb(145, 97, 97);
+  font-weight: bold;
+  font-size: 0.9rem;
 }

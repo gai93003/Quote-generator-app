@@ -9,10 +9,23 @@
   </head>
   <body>
     <div class="container">
-      <h1>Quote of the day</h1>
+      <h1>Food for thought...</h1>
       <p id="quote"></p>
       <p id="author"></p>
-      <button type="button" id="new-quote">New quote</button>
+      <div>
+      <button type="button" id="new-quote">Get Random Quote</button>
+      </div>
     </div>
+    <form action="" id="new-quote-form">
+      <fieldset>
+<label for="quote-inpt">Enter Quote:
+        <input id="quote-inpt" type="text" placeholder="Eg.Your can..." required>
+      </label>
+      <label for="author-inpt">Enter author:
+        <input type="text" id="author-inpt", placeholder="John Wick" required>
+      </label>
+      <button type="submit">New quote</button>
+      </fieldset>
+    </form>
   </body>
 </html>
