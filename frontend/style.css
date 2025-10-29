@@ -12,7 +12,8 @@ body {
 
 .container {
   background: #fff;
-  width: 70%;
+  height: 50%;
+  width: 80%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -41,10 +42,12 @@ button {
 
 #new-quote-form fieldset {
   border: none;
+  display: flex;
+  gap: 3rem;
 }
 
 input#quote-inpt, input#author-inpt, form button {
-  padding:0.5rem;
+  padding:0.6rem;
   border: none;
   border-radius: 0.2rem;
   outline: none;
@@ -76,6 +79,7 @@ input#quote-inpt, input#author-inpt, form button {
   margin: rem auto 0;
 }
 
+
 p#author {
   right: 5%;
   position: absolute;
@@ -101,7 +105,7 @@ p#author {
 
 #new-quote-form {
   padding: 3rem;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
   width: 80%;
   display: flex;
   gap: 1.4rem;
@@ -111,10 +115,11 @@ p#author {
   border-top-left-radius: 10rem;
   border-top-right-radius: 10rem;
   border-bottom-left-radius: 1rem;
+  flex-direction: column;
 }
 
 label {
   color: rgb(145, 97, 97);
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
